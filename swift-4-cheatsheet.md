@@ -28,43 +28,61 @@ Use `var` for variables that can change ("mutable") and `let` for constants that
 
 _Integers_ are "whole" numbers, i.e. numbers without a fractional component.
 
-    var meaningOfLife: Int = 42
+``` swift
+var meaningOfLife: Int = 42
+```
 
 _Floats_ are decimal-point numbers, i.e. numbers with a fractional component. They're single precision, with as little as 6 decimal digits.
 
-    var phi: Float = 1.618
+``` swift
+var phi: Float = 1.618
+```
 
 _Doubles_ are floating point numbers with double precision, i.e. numbers with a fractional component. Doubles are preferred over floats.
 
-    let pi: Double = 3.14159265359
+``` swift
+let pi: Double = 3.14159265359
+```
 
 A _String_ is a sequence of characters, like text.
 
-    var message: String = "Hello World!"
+``` swift
+var message: String = "Hello World!"
+```
 
 You use _Booleans_ for logical operations. A boolean can be either `true` or `false`. We have George Boole (1815-1864) to thank for its name.
 
-    var isLoggedIn: Bool = false
+``` swift
+var isLoggedIn: Bool = false
+```
 
 You can assign the result of an expression to a variable, like this:
 
-    var result: Int = 1 + 2
+``` swift
+var result: Int = 1 + 2
+```
 
 An _expression_ is programmer lingo for putting stuff like variables, operators, constants, functions, etc. together that the Swift compiler can "evaluate". Like this:
 
+``` swift
     let a = 3
     let b = 4
     let c = a + b
+```
 
 Swift can determine the _type_ (`Int`, `Double`, `String`, etc.) of a variable on its own. This is called _type inference_. In this example, the type of `foo` is inferred to be `String`.
 
+``` swift
     var foo = "bar"
+```
 
 **Fun Fact:** "Foobar" is a placeholder name that programmers use to denote variable names, functions, etc. when its exact name isn't that important. For instance, when you show example code in a Swift cheatsheet. But... _foobar_ is confusing, so let's not use it in tutorials, courses and programming books!)
 
 Variables can be _optional_, which means it either contains a value or it's `nil`. Optionals make coding Swift safer and more productive. Here's an optional string:
 
+``` swift
     var optionalMessage: String?
+```
 
 ## <a name="functions"></a> Functions
 
